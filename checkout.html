@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+
+  <body class="homepage">
+    <header>
+      <nav>
+      
+      <div class="header__main">
+        <div class="logo__section">
+          <a href="index.html"
+            ><img src="img/Logo.png" alt="logo" class="logo"
+          /></a>
+        </div>
+        <div class="contact">
+          <div class="contact__container">
+            <div class="nav__top">
+              <a href="#" class="contact__popup--link" id="Contact-popup">Contact us</a>
+
+              <div class="contact__popup--page" id="contact_popup_page">
+                <div class="contact__container--popup">
+                  <div class="wrap-contact">
+                    <form class="contact-form validate-form">
+                      <button class="close" id="close">&times;</button>
+                      <span class="contact__form--title"> Contact Us </span>
+
+                      <label class="input__label" for="first-name"
+                        >Your Name *</label
+                      >
+                      <div class="wrap-input rs1 validate-input">
+                        <input
+                          id="first-name"
+                          class="input__contact--form"
+                          type="text"
+                          name="first-name"
+                          placeholder="First name"
+                        />
+                        <span class="input__focus"></span>
+                      </div>
+                      <div class="wrap-input rs1 validate-input">
+                        <input
+                          class="input__contact--form"
+                          type="text"
+                          name="last-name"
+                          placeholder="Last name"
+                        />
+                        <span class="input__focus"></span>
+                      </div>
+
+                      <label class="input__label" for="email"
+                        >Email Address *</label
+                      >
+                      <div class="wrap-input validate-input">
+                        <input
+                          id="email"
+                          class="input__contact--form"
+                          type="text"
+                          name="email"
+                          placeholder="Eg. example@email.com"
+                        />
+                        <span class="input__focus"></span>
+                      </div>
+
+                      <label class="input__label" for="phone"
+                        >Phone Number</label
+                      >
+                      <div class="wrap-input">
+                        <input
+                          id="phone"
+                          class="input__contact--form"
+                          type="text"
+                          name="phone"
+                          placeholder="Eg. +47 000 00 000"
+                        />
+                        <span class="input__focus"></span>
+                      </div>
+
+                      <label class="input__label" for="message">Message *</label>
+                      <div class="wrap-input validate-input">
+                        <textarea
+                          id="message"
+                          class="input__contact--form"
+                          name="message"
+                          placeholder="Please give us the detail here...."
+                        ></textarea>
+                        <span class="input__focus"></span>
+                      </div>
+
+                      <div
+                        class="contact__container--popup-btn"
+                        id="contact-submit"
+                      >
+                        <button class="contact__form--btn">
+                          <span> Submit </span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__info">
+                <p>
+                  <i class="fas fa-phone-alt"></i>
+
+                  (+47) 000 00 000
+                </p>
+                <p class="opening__p">Mon-Fri (8-20) Sat (9-16)</p>
+              </div>
+            </div>
+          </div>
+          <div class="nav__center">
+            <div class="nav__middle">
+              <div class="cart">
+                <a href="#" class="cart__link"
+                  ><i class="fas fa-shopping-cart"></i>
+
+                  Cart</a
+                >
+              </div>
+              <div class="giftcard">
+                <a href="#" class="giftcard__link"
+                  ><i class="fas fa-gift"></i>
+
+                  Gift Card</a
+                >
+              </div>
+              <div class="signin">
+                <a href="#" class="singin__link" id="signIn"
+                  ><i class="fas fa-user"></i>
+
+                  Sign In</a
+                >
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <div class="nav__bottom">
+          <div class="navbar">
+            <a href="men.html" alt="Men" class="nav-link">Men</a>
+          </div>
+          <div class="navbar">
+            <a href="woman.html" alt="Women" class="nav-link">Women</a>
+          </div>
+          <div class="navbar">
+            <a href="junior.html" alt="Junior" class="nav-link">Junior</a>
+          </div>
+          <div class="navbar">
+            <a href="gears.html" alt="Gears" class="nav-link">Gears</a>
+          </div>
+          <div class="navbar">
+            <a href="explore.html" alt="Explore" class="nav-link">Explore</a>
+          </div>
+          <div class="navbar">
+            <a href="about.html" alt="About" class="nav-link">About</a>
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="favorite">
+            <a href="#" class="favorite__link"
+              ><i class="fas fa-heart"></i>
+
+              Favorite</a
+            >
+          </div>
+          <div class="help">
+            <a href="#" class="help__link"
+              ><i class="fas fa-info-circle"></i>
+
+              Help</a
+            >
+          </div>
+
+          <div class="search__box">
+            <form action="">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Search....."
+                name="search"
+              />
+
+              <a class="search__btn" href="#"><i class="fa fa-search"></i></a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    </header>
+
+  <body class="homepage">
+    <header>
+      <nav>
+      
+      <div class="header__main">
+        <div class="logo__section">
+          <a href="index.html"
+            ><img src="img/Logo.png" alt="logo" class="logo"
+          /></a>
+        </div>
+        <div class="box2">
+          <div class="flexbox1">
+            <div class="nav__top">
+              <a href="#" class="contact" id="Contact-popup">Contact us</a>
+
+              <div class="contact_popup_page" id="contact_popup_page">
+                <div class="container-contact">
+                  <div class="wrap-contact">
+                    <form class="contact-form validate-form">
+                      <button class="close" id="close">&times;</button>
+                      <span class="contact-form-title"> Contact Us </span>
+
+                      <label class="label-input" for="first-name"
+                        >Your Name *</label
+                      >
+                      <div class="wrap-input rs1 validate-input">
+                        <input
+                          id="first-name"
+                          class="input"
+                          type="text"
+                          name="first-name"
+                          placeholder="First name"
+                        />
+                        <span class="focus-input"></span>
+                      </div>
+                      <div class="wrap-input rs1 validate-input">
+                        <input
+                          class="input"
+                          type="text"
+                          name="last-name"
+                          placeholder="Last name"
+                        />
+                        <span class="focus-input"></span>
+                      </div>
+
+                      <label class="label-input" for="email"
+                        >Email Address *</label
+                      >
+                      <div class="wrap-input validate-input">
+                        <input
+                          id="email"
+                          class="input"
+                          type="text"
+                          name="email"
+                          placeholder="Eg. example@email.com"
+                        />
+                        <span class="focus-input"></span>
+                      </div>
+
+                      <label class="label-input" for="phone"
+                        >Phone Number</label
+                      >
+                      <div class="wrap-input">
+                        <input
+                          id="phone"
+                          class="input"
+                          type="text"
+                          name="phone"
+                          placeholder="Eg. +47 000 00 000"
+                        />
+                        <span class="focus-input"></span>
+                      </div>
+
+                      <label class="label-input" for="message">Message *</label>
+                      <div class="wrap-input validate-input">
+                        <textarea
+                          id="message"
+                          class="input"
+                          name="message"
+                          placeholder="Please give us the detail here...."
+                        ></textarea>
+                        <span class="focus-input"></span>
+                      </div>
+
+                      <div
+                        class="container-contact-form-btn"
+                        id="contact-submit"
+                      >
+                        <button class="contact-form-btn">
+                          <span> Submit </span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__info">
+                <p>
+                  <i class="fas fa-phone-alt"></i>
+
+                  (+47) 000 00 000
+                </p>
+                <p class="opening__p">Mon-Fri (8-20) Sat (9-16)</p>
+              </div>
+            </div>
+          </div>
+          <div class="flexbox2">
+            <div class="nav__middle">
+              <div class="cart">
+                <a href="#" class="cart__link"
+                  ><i class="fas fa-shopping-cart"></i>
+
+                  Cart</a
+                >
+              </div>
+              <div class="giftcard">
+                <a href="#" class="giftcard__link"
+                  ><i class="fas fa-gift"></i>
+
+                  Gift Card</a
+                >
+              </div>
+              <div class="signin">
+                <a href="#" class="singin__link" id="signIn"
+                  ><i class="fas fa-user"></i>
+
+                  Sign In</a
+                >
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="nav__bottom">
+          <div class="navbar">
+            <a href="men.html" alt="Men" class="nav-link">Men</a>
+          </div>
+          <div class="navbar">
+            <a href="woman.html" alt="Women" class="nav-link">Women</a>
+          </div>
+          <div class="navbar">
+            <a href="junior.html" alt="Junior" class="nav-link">Junior</a>
+          </div>
+          <div class="navbar">
+            <a href="gears.html" alt="Gears" class="nav-link">Gears</a>
+          </div>
+          <div class="navbar">
+            <a href="explore.html" alt="Explore" class="nav-link">Explore</a>
+          </div>
+          <div class="navbar">
+            <a href="about.html" alt="About" class="nav-link">About</a>
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="favorite">
+            <a href="#" class="favorite__link"
+              ><i class="fas fa-heart"></i>
+
+              Favorite</a
+            >
+          </div>
+          <div class="help">
+            <a href="#" class="help__link"
+              ><i class="fas fa-info-circle"></i>
+
+              Help</a
+            >
+          </div>
+
+          <div class="search-box">
+            <form action="">
+              <input
+                class="search-txt"
+                type="text"
+                placeholder="Search....."
+                name="search"
+              />
+
+              <a class="search-btn" href="#"><i class="fa fa-search"></i></a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    </header>
+
+    <main>
+        
+      
+          <!--------------Cart Items details--------------->
+          <div class="small-container cart-page">
+            <div class="checkout__header">
+              <h1>CHECKOUT</h1>
+              <p>Sign in to have your billing information remembered to next time</p>
+              <p>
+                **Note: By upgrading to VIP membership, you get a point after each
+                purchase you make, that you can spend them in our point shop. You also
+                get amazing deals much more. Click here to see all the deals you get
+                with VIP account:
+              </p>
+      
+              <h2>Overview</h2>
+            </div>
+      
+            <table class="checkout__table">
+              <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+              </tr>
+      
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="img/menProduct-1.jpeg" />
+                    <div>
+                      <p>Red Printed T-Shirt</p>
+                      <small>Price: $50.00</small><br />
+                      <a href="">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="text" value="M" class="input__size" /></td>
+                <td><input type="number" value="1" class="input__size" /></td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="img/tshirt-male-2.jpg" />
+                    <div>
+                      <p>HRX Sports Shoes</p>
+                      <small>Price: $75.00</small><br />
+                      <a href="">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="text" value="M" class="input__size" /></td>
+                <td><input type="number" value="1" class="input__size" /></td>
+                <td>$75.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="img/Backpack-men-2.jpg" />
+                    <div>
+                      <p>HRX Gray Trackpants</p>
+                      <small>Price: $75.00</small><br />
+                      <a href="">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="text" value="-" class="input__size" /></td>
+                <td><input type="number" value="1" class="input__size" /></td>
+                <td>$75.00</td>
+              </tr>
+            </table>
+      
+            <div class="total-price checkout__price">
+              <table>
+                <tr>
+                  <td>Subtotal</td>
+                  <td>$200.00</td>
+                </tr>
+                <tr>
+                  <td>Ship</td>
+                  <td>$19.00</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>$219.00</td>
+                </tr>
+              </table>
+            </div>
+      
+            <div class="billing">
+              <div class="col-75">
+                <div class="billing__container">
+                  <form action="/action_page.php">
+                    <div class="billing">
+                      <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"
+                          ><i class="fa fa-user"></i> Full Name</label
+                        >
+                        <input
+                          type="text"
+                          class="billing__input"
+                          id="fname"
+                          name="firstname"
+                          placeholder="John M. Doe"
+                        />
+                        <label for="email"
+                          ><i class="fa fa-envelope"></i> Email</label
+                        >
+                        <input
+                          type="text"
+                          class="billing__input"
+                          id="email"
+                          name="email"
+                          placeholder="john@example.com"
+                        />
+                        <label for="adr"
+                          ><i class="fa fa-address-card-o"></i> Address</label
+                        >
+                        <input
+                          type="text"
+                          class="billing__input"
+                          id="adr"
+                          name="address"
+                          placeholder="542 W. 15th Street"
+                        />
+                        <label for="city"
+                          ><i class="fa fa-institution"></i> City</label
+                        >
+                        <input
+                          type="text"
+                          class="billing__input"
+                          id="city"
+                          name="city"
+                          placeholder="New York"
+                        />
+      
+                        <div class="row">
+                          <div class="col-50">
+                            <label for="state">State</label>
+                            <input
+                              type="text"
+                              class="billing__input"
+                              id="state"
+                              name="state"
+                              placeholder="NY"
+                            />
+                          </div>
+                          <div class="col-50">
+                            <label for="zip">Zip</label>
+                            <input
+                              type="text"
+                              class="billing__input"
+                              id="zip"
+                              name="zip"
+                              placeholder="10001"
+                            />
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                          <i class="fa fa-cc-visa" style="color: navy"></i>
+                          <i class="fa fa-cc-amex" style="color: blue"></i>
+                          <i class="fa fa-cc-mastercard" style="color: red"></i>
+                          <i class="fa fa-cc-discover" style="color: orange"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input
+                          type="text"
+                          class="billing__input"
+                          id="cname"
+                          name="cardname"
+                          placeholder="John More Doe"
+                        />
+                        <label for="ccnum">Credit card number</label>
+                        <input
+                          type="text"
+                          class="billing__input"
+                          id="ccnum"
+                          name="cardnumber"
+                          placeholder="1111-2222-3333-4444"
+                        />
+                        <label for="expmonth">Exp Month</label>
+                        <input
+                          type="text"
+                          class="billing__input"
+                          id="expmonth"
+                          name="expmonth"
+                          placeholder="September"
+                        />
+                        <div class="row">
+                          <div class="col-50">
+                            <label for="expyear">Exp Year</label>
+                            <input
+                              type="text"
+                              class="billing__input"
+                              id="expyear"
+                              name="expyear"
+                              placeholder="2018"
+                            />
+                          </div>
+                          <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input
+                              type="text"
+                              class="billing__input"
+                              id="cvv"
+                              name="cvv"
+                              placeholder="352"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <label>
+                      <input type="checkbox" checked="checked" name="sameadr" />
+                      Shipping address same as billing
+                    </label>
+                    <input
+                      type="submit"
+                      value="Confirm purchase"
+                      class="confirm__btn"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="section4">
+            <div class="sponsors1"></div>
+            <div class="sponsors2"></div>
+            <div class="sponsors3"></div>
+            <div class="sponsors4"></div>
+          </section>
+    </main>
+    <footer>
+      <div class="footer__links">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#" id="Contact-popup-footer">Contact</a></li>
+          <li><a href="#">VIP info</a></li>
+          <li><a href="#">Our Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <img src="img/Logo.png" alt="logo" />
+        <p>&copy; Copyright 2020, Danier Valiev</p>
+      </div>
+
+      <div class="footer__social--links">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fab fa-facebook-f"></i>
+
+              Facebook</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fab fa-twitter"></i>
+
+              Twitter</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fab fa-instagram"></i>
+
+              Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+
+    </div>
+<div class="subscribe">
+    <label class="subscribe-label" for="email"
+      >Subscribe to us</label
+    >
+    
+      <input
+        id="email"
+        class="input_subscribe"
+        type="text"
+        name="email"
+        placeholder="Eg. example@email.com"
+      />
+      
+      <button class="subscribe-btn">Ok</button>
+    
+  </div>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
